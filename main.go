@@ -17,6 +17,8 @@ func addBooks() {
 func main() {
 	args := os.Args
 	command, error := library.CheckUserArguments(args)
+	//If user arguments are correct, add books to the list and
+	//apply commands.
 	if error == nil {
 		addBooks()
 		library.PrintLineMessage("Books:")
